@@ -19,7 +19,7 @@ def register(request):
             # error occurs when there is no email match
             # then control goes to except block
 
-            Patient.objects.get(email = request.POST['email'])
+            user.objects.get(email = request.POST['email'])
             return render(request,'register.html',{'msg':"Email already registered, try using other Email"})
         
         except:
