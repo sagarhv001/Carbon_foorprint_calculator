@@ -28,6 +28,7 @@ urlpatterns = [
     path('about/',about,name="about"),
     path('contact/',contact,name="contact"),
     path('calculator/',calculator,name="calculator"),
+    path('otp/',otp,name="otp"),
     
 
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

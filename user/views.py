@@ -18,3 +18,6 @@ def contact(request):
 
 def calculator(request):
     return render(request,'calculator.html')
+
+def otp(request):
+    return render(request,'otp.html')

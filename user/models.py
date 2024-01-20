@@ -22,9 +22,9 @@ class User_History(models.Model):
     total_emsn = models.IntegerField()
 
     def __str__ (self):
-        return self.id_no
+        return self.name
     
-class goal(models.Model):
+class User_Goal(models.Model):
     name = models.ForeignKey(User_Details, on_delete=models.CASCADE)
     gl_daily_emsn = models.IntegerField()
     gl_travel_emsn = models.IntegerField()
@@ -32,7 +32,7 @@ class goal(models.Model):
     gl_food_emsn = models.IntegerField()
 
     def __str__ (self):
-        return self.id_no
+        return self.name
 
 class Average(models.Model):
     daily_emsn = models.IntegerField()
